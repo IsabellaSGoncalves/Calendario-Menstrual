@@ -8,6 +8,7 @@ import { getFirestore, setDoc, doc } from "firebase/firestore"
 import "../index.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+import landPageImage from '../img/land_page.png'
 
 const LoginRegister = () => {
   const navigate = useNavigate()
@@ -150,7 +151,10 @@ const LoginRegister = () => {
   return (
     <section className="relative bg-[linear-gradient(163.48472565622978deg,_#e81740_-40%,_#b98046_140%)] min-h-screen">
       <div className="absolute inset-0 bg-[url('./img/calendar.png')] bg-repeat bg-opacity-50 z-0"></div>
-      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto min-h-screen relative z-10">
+      <div className="flex items-center justify-around min-h-screen p-6 relative z-10">
+      <div className="flex-1 max-w-xl">
+        <img className="h-auto max-w-full" src={landPageImage} alt="land-tampon" />
+      </div>
         <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
